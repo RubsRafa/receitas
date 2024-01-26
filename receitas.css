@@ -1,0 +1,51 @@
+main {
+  height: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 5rem;
+  gap: 1.2rem;
+}
+
+.card {
+  max-width: fit-content;
+  height: fit-content;
+  min-height: 39.5rem;
+}
+
+.card img {
+  object-fit: cover;
+  max-width: 23rem;
+  min-width: 6rem;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card h3 {
+  text-align: start;
+}
+
+.card ul {
+  margin-left: 1rem;
+}
+
+.card li {
+  text-align: start;
+  font-size: 1.4rem;
+}
+
+.card p {
+  max-width: 20rem;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 920px) {
+  main {
+    padding: 4rem 1rem;
+  }
+}
