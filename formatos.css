@@ -52,6 +52,10 @@ span.navbar-toggler-icon {
   max-height: 2px;
 }
 
+.navbar-collapse{
+  z-index: 1;
+}
+
 ul.navbar-nav {
   background-color: #000000;
   width: fit-content;
