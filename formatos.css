@@ -22,7 +22,7 @@ span {
 }
 
 body {
-  /* background-color: #E9967A; */
+  background-color: #E9967A;
 }
 
 nav {
@@ -60,9 +60,17 @@ ul.navbar-nav {
 }
 
 main {
-  width: calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  text-align: center;
 }
 
 footer {
-  width: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  padding-block: .2rem;
+  font-size: 1.4rem;
 }
