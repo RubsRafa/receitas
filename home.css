@@ -8,25 +8,9 @@
   display: flex;
 }
 
-.logo__circle {
-  min-width: 70px;
-  min-height: 70px;
-  height: 70px;
-  margin-block: auto;
-
-  border: 8px solid black;;
-  border-radius: 50%;
-  
-  position: relative;
-}
-
 .logo {
-  max-width: 3.4rem;
-  max-height: 3.4rem;
-
-  position: absolute;
-  top: 1.2rem;
-  left: 0;
+  max-width: 5rem;
+  max-height: 5rem;
 }
 
 main h2 {
