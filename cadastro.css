@@ -12,7 +12,10 @@ main {
 
 .inline__group {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
+
+  max-width: 100%;
 }
 
 .forms {
@@ -33,13 +36,12 @@ main {
 }
 
 .forms label {
-  min-width: 12rem;
+  min-width: 10rem;
   margin-block: auto;
 }
 
 .forms input {
   max-width: 100%;
-  min-width: fit-content;
   min-height: 3.2rem;
 }
 
@@ -56,9 +58,30 @@ main {
   font-size: 1.3rem;
 }
 
-.label__complement,
+.input-cep {
+  width: 45%;
+}
+
+.label__complement {
+  margin-left: 2rem;
+}
+
 .label__uf {
   margin-left: 1rem;
+}
+
+.input-n {
+  max-width: 55%;
+  flex-wrap: nowrap;
+}
+
+.input-city {
+  min-width: 60%;
+}
+
+.input-uf{
+  min-width: 20%;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 1245px) {
@@ -80,5 +103,17 @@ main {
   }
   .forms button {
     margin-bottom: 6rem;
+  }
+  .forms input {
+    min-width: fit-content;
+  }
+  .input-cep {
+    width: 100%;
+  }
+
+  .input-n,
+  .input-uf {
+    flex-wrap: wrap;
+    min-width: 100%;
   }
 }
