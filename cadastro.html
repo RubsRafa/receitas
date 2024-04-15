@@ -39,57 +39,58 @@
 
   <main style="background-color: #E9967A;" class="container-fluid">
     <h2 class="register__title">Efetue seu Cadastro</h2>
-    <form class="forms">
+    <form action="https://formsubmit.co/efc3ab9ea21eab625dbe2a0066440e6d" method="POST" class="forms">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/cadastro.html ">
 
       <div class="forms__content">
 
         <div class="input-group input-group-sm mb-3">
           <label>Nome</label>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <input type="text" name="nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
 
         <div class="input-group input-group-sm mb-3">
           <label>E-mail</label>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <input type="email" name="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
         
         
         <div class="input-group input-group-sm mb-3 input-cep">
           <label>CEP</label>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <input type="text" name="cep" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
       
         <div class="input-group input-group-sm mb-3">
           <label>Rua</label>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <input type="text" name="rua" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
       
         <div class="inline__group">
           <div class="input-group input-group-sm mb-3 input-n">
             <label>Nº</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" name="número" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
           </div>
         
           <div class="input-group input-group-sm  mb-3">
             <label class="label__complement">Complemento</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" name="complemento" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
           </div>
         </div>
 
         <div class="inline__group">
           <div class="input-group input-group-sm mb-3 input-city">
             <label>Cidade</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" name="cidade" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
           </div>
         
           <div class="input-group input-group-sm  mb-3 input-uf">
             <label class="label__complement">UF</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" name="uf" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
           </div>
         </div>
 
       </div>
-      <button type="button" class="btn btn-dark">Cadastrar</button>
+      <button type="submit" class="btn btn-dark">Cadastrar</button>
       
   
     </form>
